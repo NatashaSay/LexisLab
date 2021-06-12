@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<p>home</p>
+<p>statistic</p>
+
+<p>Recommended lexis sets</p>
+
+{% for item in theme %}
+    <p><a href="{% url 'theme-detail' pk=item.pk %}">{{item.title}}</a></p>
+    <p>{{item.level}}</p>
+{% endfor %}
+
+
+{% endblock %}

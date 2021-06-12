@@ -1,0 +1,255 @@
+{% load static %}
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Title Page</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://bootswatch.com/3/cosmo/bootstrap.min.css">
+        <link rel="stylesheet" href=" {% static 'css/index.css'%}">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id='main'>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="menu-buttons">
+                        <div class="col-md-2">
+                            <button class="btn menu-button">
+                                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                            </button><br>
+                            <button class="btn menu-second-button">
+                                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                        <div class="col-md-2">
+                            <a  href="#second-page" class ="link-menu">
+                                <p class="text-left">ABOUT US</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a  href="#third-page" class ="link-menu">
+                                <p class="text-left">FUNCTIONS</p>
+                            </a>
+                        </div>
+                        <div class="col-md-2">
+                            <a class ="link-menu" href="#footer">
+                                <p class="text-left">CONTACT</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <p class="right-text">OVERVIEW INFORMATION</p>
+                        <div class="numbers">
+                            <a href="#third-page"><p>03</p></a> 
+                            <a href="#second-page"> <p>02</p></a>
+                            <a href="#main"><p class="main-number">01</p></a>
+                     </div>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="main-label">Learn german languange with us.</p>
+                        <p class="sub-label">WE PROVIDE</p>
+                        <div class="row">
+                            <div class="col-md-5">
+                                <p class="sub-col">FLASH CARDS METHOD</p>
+                                <p class="sub-text">We propose to learn words using one of the most effective systems. Intense repetition, will allow you to learn a huge amount of vocabulary.</p>
+                            </div>
+                            <div class="col-md-5 col-md-offset-1">
+                                <p class="sub-col">HUGE LEXIS SET</p>
+                                <p class="sub-text">The study application contains a large amount of vocabulary, grouped on topics of different levels. Sets are often supplemented.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="{% static 'img/study.svg' %}?version=1" alt="" class="img-responsive main-image">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-2">
+                        <div class="action-buttons">
+                            <button class="btn sign-up"><a href="/signup/">Sign up</a></button>
+                            <button class="btn log-in"><a href="/login/">Log in</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="second-page">
+           <div class="container-fluid">
+                <div class="row block"> 
+                    <p class="title text-center">About us</p>
+                    <div class="col-md-1">
+                        <div class="col-md-2">
+                            <p class="right-text2">OVERVIEW INFORMATION</p>
+                            <div class="numbers2">
+                               <a href="#third-page"><p>03</p></a> 
+                               <a href="#second-page"> <p class="main-number">02</p></a>
+                               <a href="#main"><p>01</p></a>
+                            </div>
+                        </div>    
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row block2">
+                            <div class="col-md-3">
+                                <div class="part-section">
+                                    <div class="image-part">
+                                        <img src="{% static 'img/flag.svg' %}?version=1" alt="" class="img-responsive main-image">
+                                    </div>
+                                    <p class="header-part">Focus on German language</p>
+                                    <p class="text-part">Our system is focused on helping you learn the German language. We are ideal for people who want to learn German</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="part-section">
+                                    <div class="image-part">
+                                        <img src="{% static 'img/test.svg' %}?version=1" alt="" class="img-responsive main-image">
+                                    </div>
+                                    <p class="header-part">Individual testing</p>
+                                    <p class="text-part">We are focused on each of our students, therefore we have prepared a unique testing system</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="part-section">
+                                    <div class="image-part">
+                                        <img src="{% static 'img/cards.svg' %}?version=1" alt="" class="img-responsive main-image">
+                                    </div>
+                                    <p class="header-part">Flash cards</p>
+                                    <p class="text-part">We have prepared for you unique flash cards that will help you in learning the language</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3 ">
+                                <div class="part-section">
+                                    <div class="image-part">
+                                        <img src="{% static 'img/web.svg' %}?version=1" alt="" class="img-responsive main-image">
+                                    </div>
+                                    <p class="header-part">Convenient design</p>
+                                    <p class="text-part">Design that combines lightness and colorfulness, does not distract from the main functions of the service</p>
+                                </div>
+                            </div>    
+    
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </section>
+        <section id="third-page">
+            <div class="container-fluid">
+                <div class="row function">
+                        <div class="col-md-2">
+                            <p class="right-text2">OVERVIEW INFORMATION</p>
+                            <div class="numbers2">
+                                <a href="#third-page"><p class="main-number">03</p></a> 
+                                <a href="#second-page"> <p>02</p></a>
+                                <a href="#main"><p>01</p></a>
+                             </div>
+                        </div>    
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-4  function-text">
+                                <p class="title-f">Function</p>
+                                <p class="header-f">Our service is filled with unique functionality that simplifies and improves the learning process. You can see our main capabilities, which we are proud of.</p>
+                                <div class="action-buttons">
+                                    <button class="btn learn-more">Learn more</button>
+                                </div>        
+                            </div>
+                            <div class="col-md-5 col-md-offset-1">
+                                <div class="row first-grid">
+                                    <div class="col-md-5 col-md-offset-1">
+                                            <img src="{% static 'img/translation.svg' %}?version=1" alt="" class="img-responsive main-image">
+                                        </div>
+                                    <div class="col-md-5">
+                                        <div class="image-grid-s">
+                                            <img src="{% static 'img/dictionary.svg' %}?version=1" alt="" class="img-responsive main-image">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row second-grid">
+                                    <div class="col-md-6">
+                                        <div class="image-grid">
+                                            <img src="{% static 'img/audio.svg' %}?version=1" alt="" class="img-responsive main-image">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="image-grid">
+                                            <img src="{% static 'img/analytics.svg' %}?version=1" alt="" class="img-responsive main-image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 bot">
+                        <div class="row context">
+                            <div class="col-md-5 col-md-offset-1">
+                                <img src="{% static 'img/telegram.svg' %}?version=1" alt="" class="img-responsive img-telegram">
+                                <p class="telegram-title">Telegram Bot!</p>
+                                <p class="telegram-text">Your universal assistant is always with you!</p>        
+                            </div>
+                            <div class="col-md-3 col-md-offset-2">
+                                <img src="{% static 'img/qr.svg' %}?version=1" alt="" class="img-responsive img-qr">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 col-md-offset-2">
+                        <div class="menu-2">
+                            <h2>Menu</h2>
+                                <p class="text2">ABOUT US</p>
+                                <p class="text2">FUNCTIONS</p>
+                                <p class="text2">CONTACT</p>
+                        </div>        
+                    </div>
+                    <div class="col-md-3">
+                        <div class="contacts">
+                            <h2>Contact</h2>
+                                <p class="text2">+380(50)858-98-87</p>
+                                <p class="text2">Gagarin Avenue, 42A</p>
+                        </div>        
+                    </div>
+                    <div class="col-md-3">
+                        <div class="social">
+                            <h2>Socials</h2>
+                            <ul class="icon-part">
+                                <li><a href="#"><img src="{% static 'img/facebook.svg' %}?version=1" alt="" class="img-responsive"></a></li>
+                                <li><a href="#"><img src="{% static 'img/gmail.svg' %}?version=1" alt="" class="img-responsive"></a></li>
+                                <li><a href="#"><img src="{% static 'img/linkedln.svg' %}?version=1" alt="" class="img-responsive"></a></li>
+                            </ul>
+                        </div>        
+                    </div>
+                </div>
+                <div class="policy text-center">
+                    <p class="pod">Personal data processing agreement
+                    <br>
+                    2021  Privacy Police
+                    </p>
+                </div>
+            </div>
+          </section>
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

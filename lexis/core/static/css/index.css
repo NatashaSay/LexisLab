@@ -1,0 +1,261 @@
+body{
+    background: url("/static/img/font1.png") 100%  no-repeat fixed;
+   
+}
+#main{
+    height: 100vh;
+    margin-top: 0;
+    /*background: rgb(0,0,0);
+    background: linear-gradient(41deg, rgba(0,0,0,1) 0%, rgba(6,3,22,1) 13%, rgba(34,15,79,1) 26%, rgba(13,3,38,1) 46%, rgba(8,1,28,1) 100%, rgba(0,212,255,1) 100%);
+    */color: #0e334e;
+     font-weight: 900;
+}
+
+.menu-buttons{
+    padding-top: 3vh;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 9pt;
+}
+
+a:link{
+    color: rgb(161, 161, 161);
+}
+a.link-menu:visited{
+    color: #0e334e;
+}
+a.link-menu:link{
+    color: #0e334e;
+}
+a:visited{
+    color: rgb(161, 161, 161);
+}
+.menu-button{
+    height: 8vh;
+    width: 5vw;
+    background-color: #0e334e;
+    color: white;
+    margin-top: -3vh;
+    margin-left: -1.1vw;
+    display: inline;
+}
+
+.menu-second-button{
+    color: white;
+    width: 5vw;
+    margin-left: -1.1vw;
+    border-bottom-right-radius: 20px;
+    background: rgb(234,189,255);
+    background: linear-gradient(90deg, rgba(234,189,255,1) 0%, rgba(183,169,255,1) 100%);
+}
+
+.main-label{
+    padding-top: 6vh;
+    font-size: 38pt;
+}
+
+.sub-label{
+    color: rgb(183, 169, 255);
+    font-weight:lighter;
+    padding-top: 2vh;
+}
+
+.sub-col{
+    padding-top: 3vh;
+    font-weight: bold;
+    border-bottom: 1px rgb(183, 169, 255) solid;
+    padding-bottom: 3vh;
+}
+
+.sub-text{
+    color: rgb(161, 161, 161);
+    font-weight: 400;
+    font-size: 9pt;
+}
+
+/* .action-buttons{
+    
+} */
+
+.sign-up{
+    background-color: #0e334e;
+    color: white;
+    border-bottom-left-radius: 20px;
+}
+
+.log-in{
+    background: rgb(234,189,255);
+    background: linear-gradient(90deg, rgba(234,189,255,1) 0%, rgba(183,169,255,1) 100%);
+    color: white;
+    border-top-right-radius: 20px;
+}
+
+.right-text{
+    writing-mode: tb-rl;
+    transform:rotate(180deg);
+    color: rgb(161, 161, 161);
+    margin-top: 20vh;
+    margin-left: 2vw;
+}
+
+.numbers{
+    margin-left: 2vw;
+    margin-top: 6vh;
+    color: rgb(161, 161, 161)
+}
+
+.main-number{
+    color: #0e334e;
+}
+
+.main-image{
+    margin-top: -18vh;
+    margin-left: -2vw;
+}
+
+
+#second-page{
+    height: 100vh;
+}
+
+.title{
+    font-size: 32px;
+    font-weight:900;
+    color: #0e334e;
+}
+.block{
+    padding-top: 10vh;
+}
+.block2{
+    padding-left: 5vw;
+}
+.part-section{
+    margin-top: 35vh;
+    width: 200px;
+}
+
+.header-part{
+    font-size: 24px;
+    margin-top: 2vh;
+    font-weight:900;
+    color: #0e334e;
+    height: 11vh;
+}
+
+.image-part{
+    margin-left: 2vw;
+}
+.text-part{
+    font-size: 14px;
+    color: rgb(161, 161, 161)
+
+}
+
+.right-text2{
+    writing-mode: tb-rl;
+    transform:rotate(180deg);
+    color: rgb(161, 161, 161);
+    margin-top: 20vh;
+    margin-left: 2vw;
+    font-weight: 900;
+}
+
+.numbers2{
+    margin-left: 2vw;
+    margin-top: 6vh;
+    color: rgb(161, 161, 161);
+    font-weight: 900;
+}
+
+#third-page{
+    height: 100vh;
+}
+
+.function{
+    height: 70vh;
+}
+
+.function-text{
+    padding-top: 10vh;
+}
+.bot{
+    height: 50vh;
+    border-bottom-left-radius: 40px;
+    border: 3px solid #0e334e;
+    margin-top: 20vh;
+    background-color:rgb(161, 161, 161, .5);
+    
+}
+
+.title-f{
+    font-size: 32px;
+    font-weight:900;
+    color: #0e334e;
+}
+
+
+.header-f{
+    font-size: 18px;
+    color: rgb(161, 161, 161);
+}
+
+.learn-more{
+    margin-top: 7vh;;
+    background-color: #0e334e;
+    color: white;
+    border-bottom-left-radius: 20px;
+}
+
+.first-grid{
+    padding-top: 30vh;
+}
+.second-grid{
+    padding-top: 23vh;
+}
+
+.telegram-title{
+color: #0e334e;
+font-size: 40px;
+font-weight: 900;
+}
+
+.telegram-text{
+    color: #0e334e;
+    font-size: 16px;
+}
+
+.context{
+    padding-top: 5vh;
+}
+    
+.img-qr{
+    border-radius: 20px;
+}
+#footer{
+    background-color: #0e334e;
+    height: 40vh;
+    margin-top: 60vh;
+}
+
+.text2{
+    color: white;
+    font-size: 14px;
+}
+
+h2{
+    color: white;
+    font-weight: 900;
+    font-size: 24px;
+}
+ul.icon-part{
+    list-style-type: disc;
+    display: flex;
+    list-style: none;
+    margin-left: -4vw;
+    
+}
+.pod{
+    font-size: 12px;
+    color: white;
+    padding-top: 5vh;
+}

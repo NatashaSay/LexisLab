@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<p>my list</p>
+
+{% for item in cards %}
+
+<p>{{item.word_id}} {{item.created}}
+    <button class="btn btn-outline"><a href="{% url 'delete_card' pk=item.pk %}"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a></button>
+</p>
+
+<br>
+{% endfor %}
+
+
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<p>theme detail</p>
+<button class="btn btn-info"><a href="{% url 'learn_words' pk=theme.pk key=1 %}">Start learn</a></button>
+
+<button class="btn btn-info"><a href="/home">Return</a></button>
+
+{% endblock %}

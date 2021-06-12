@@ -1,0 +1,42 @@
+.menu-left{
+    background-color: #0E334E;
+    padding-top: 5vh;
+    height: 100vh;
+    color:#F6F6F8;
+}
+
+.menu-items{
+    margin-top: 25vh;
+}
+.text-menu{
+    color: #F6F6F8;
+    font-size: 16px;
+    display: flex;
+}
+.active{
+    background-color: rgba(49, 89, 118, 0.5);
+}
+
+.profile-area{
+margin-top: 30.6vh;
+padding-top: 5vh;
+background-color: rgba(49, 89, 118, 0.5);
+width: 17vw;
+height: 18vh;
+margin-left: -1.5vw;
+padding-left: 1.5vw;
+border-top-right-radius: 20px;
+
+}
+
+.name-p{
+    color: #F6F6F8;
+}
+
+.logout-image{
+    padding-top: 1.5vh;
+}
+
+.image-menu{
+    padding-right: 1vw;
+}

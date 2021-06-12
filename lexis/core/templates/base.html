@@ -1,0 +1,76 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href=" {% static 'css/base.css'%}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <title>Title Page</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://bootswatch.com/3/cosmo/bootstrap.min.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <style>
+        body{
+            background-color:#F6F6F8;
+        }
+    </style>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 menu-left">
+                        <div class="logo-img">
+                            <a href="/"><img src="{% static 'img/logo.svg' %}?version=1" alt="" class="img-responsive logo-image"></a>
+                        </div>
+                        <div class="menu-items">
+                            {% if page == 'home' %}
+                            <a href="/home/"><p class="text-menu active"><img class="image-menu" src="{% static 'img/home.svg' %}?version=1" alt="" class="img-responsive menu-image">home</p></a>
+                            {% else %}
+                            <a href="/home/"><p class="text-menu"><img class="image-menu" src="{% static 'img/home.svg' %}?version=1" alt="" class="img-responsive menu-image">home</p></a>
+                            {% endif %}
+                            <a href="/translate/"><p class="text-menu"><img class="image-menu" src="{% static 'img/translate.svg' %}?version=1" alt="" class="img-responsive menu-image">translate</p></a>
+                            <a href="/mylist/"><p class="text-menu"><img class="image-menu" src="{% static 'img/list.svg' %}?version=1" alt="" class="img-responsive menu-image">my list</p></a>
+                            </div>
+                        <a href="/profile/">
+                            <div class="profile-area">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="{{ profile.image.url}}?version=1" alt="" class="img-responsive profile-image">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="profile-area-text">
+                                            <p class="name-p">{{profile.lastname}} <span>{{profile.firstname}}</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a  href="/"><img src="{% static 'img/log-out.svg' %}?version=1" alt="" class="img-responsive logout-image"></a>
+                                    </div>
+                                </div>
+                            </div>    
+                        </a>
+                </div>
+                <div class="col-md-10">
+                    {% block content %} {% endblock %}
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>

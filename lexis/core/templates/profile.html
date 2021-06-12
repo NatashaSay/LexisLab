@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+
+{{profile.user}}
+{{profile.lastname}}
+<img src="{{ profile.image.url }}?version=1" alt="" class="img-responsive profile-image">
+
+
+{% endblock %} 

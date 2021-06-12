@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<p>translate</p>
+
+
+<div class="col-md-12">
+    <form action="/translate/" method="post"> 
+        {% csrf_token %}
+        <div class="row">
+          <div class="col-md-4">
+            <div class="input-group">
+                <textarea name="Text1" cols="40" rows="5" class="form-control" placeholder="Search" id="txtSearch">{{text}}</textarea>
+              <div class="input-group-btn"></div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-primary" type="submit">
+                <span class="glyphicon glyphicon-arrow-right"></span>
+              </button>
+          </div>
+          <div class="col-md-4">
+            <p>{{translation}}</p>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-primary" type="submit">
+                <span class="glyphicon glyphicon-volume-up"></span>
+            </button>
+          </div>
+        </div>
+    </form>
+
+</div>
+
+
+{% endblock %}
+
+<input type="text" class="form-control" placeholder="Search"/>
+<form action="/your-name/" method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <input type="submit" value="Submit" class="btn btn-info">
+</form>

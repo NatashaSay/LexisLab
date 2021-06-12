@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<p>Words</p>
+
+<p>{{word.queue_value}} / {{all_words}}</p>
+<p>{{word.content}}</p>
+<p>{{word.article}}</p>
+<p>{{word.translation}}</p>
+
+{% if word.audio %}
+<audio controls>
+    <source src="{{word.audio.url}}" type="audio/mp3"/>
+</audio>
+
+<br>
+
+
+<button class="btn btn-info"><a href="{% url 'learn_words' pk=word.theme.pk key=word.queue_next_value %}">Previous</a></button>
+
+<button class="btn btn-info"><a href="{% url 'learn_words' pk=word.theme.pk key=word.queue_next_value %}">Next</a></button>
+
+
+<button class="btn btn-info"><a href="{% url 'theme-detail' pk=word.theme.pk %}">Cancel</a></button>
+
+<button class="btn btn-info"><a href="{% url 'add_card' pk=word.pk %}">Save word</a></button>
+
+{% endif %}
+
+
+
+{% endblock %}
